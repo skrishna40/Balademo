@@ -1,0 +1,9 @@
+{
+	"name": "SBK-DataFactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "36550c1d-0f83-4030-8b8c-2673b5270071",
+		"tenantId": "9c0ca214-20db-43d9-a8f4-eacce7398479"
+	}
+}

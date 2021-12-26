@@ -1,0 +1,27 @@
+{
+	"name": "BlbStore",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Lk_blobstr",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@concat('incremental -',pipeline().RunID,'.txt')",
+					"type": "Expression"
+				},
+				"folderPath": "incrementalcopy",
+				"container": "balatutorial"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
